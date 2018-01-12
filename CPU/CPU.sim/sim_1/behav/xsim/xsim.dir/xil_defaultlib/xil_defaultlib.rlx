@@ -1,0 +1,20 @@
+0.6
+2017.3
+Oct  4 2017
+20:11:37
+C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/ctrl.v,1515646584,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/ex.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,ctrl,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/defines.v,1515700388,verilog,,,,,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/ex.v,1515694100,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/ex_mem.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,ex,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/ex_mem.v,1515689023,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/id.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,ex_mem,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/id.v,1515715406,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/id_ex.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,id,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/id_ex.v,1515688250,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/if_id.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,id_ex,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/if_id.v,1515658525,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/inst_rom.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,if_id,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/inst_rom.v,1514050229,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/mem.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,inst_rom,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/mem.v,1515699052,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/mem_wb.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,mem,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/mem_wb.v,1515244534,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/openmips.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,mem_wb,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/openmips.v,1515680902,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,openmips,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc.v,1515702637,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/pc_reg.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,openmips_min_sopc,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb.v,1515701300,verilog,,,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,openmips_min_sopc_tb,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/pc_reg.v,1515658620,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/regfile.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,pc_reg,,,,,,,,
+C:/Users/honey/Desktop/selfCPU/CPU/regfile.v,1515317639,verilog,,C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb.v,C:/Users/honey/Desktop/selfCPU/CPU/defines.v,regfile,,,,,,,,

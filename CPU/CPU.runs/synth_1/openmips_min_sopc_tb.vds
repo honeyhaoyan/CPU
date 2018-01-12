@@ -1,0 +1,642 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Jan 12 08:16:12 2018
+# Process ID: 6392
+# Current directory: C:/Users/honey/Desktop/selfCPU/CPU/CPU.runs/synth_1
+# Command line: vivado.exe -log openmips_min_sopc_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc_tb.tcl
+# Log file: C:/Users/honey/Desktop/selfCPU/CPU/CPU.runs/synth_1/openmips_min_sopc_tb.vds
+# Journal file: C:/Users/honey/Desktop/selfCPU/CPU/CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source openmips_min_sopc_tb.tcl -notrace
+Command: synth_design -top openmips_min_sopc_tb -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12244 
+WARNING: [Synth 8-2611] redeclaration of ansi port stallreq is not allowed [C:/Users/honey/Desktop/selfCPU/CPU/id.v:78]
+WARNING: [Synth 8-1083] stallreq was previously declared without a range [C:/Users/honey/Desktop/selfCPU/CPU/id.v:78]
+WARNING: [Synth 8-976] stallreq has already been declared [C:/Users/honey/Desktop/selfCPU/CPU/id.v:78]
+WARNING: [Synth 8-2654] second declaration of stallreq ignored [C:/Users/honey/Desktop/selfCPU/CPU/id.v:78]
+INFO: [Synth 8-994] stallreq is declared here [C:/Users/honey/Desktop/selfCPU/CPU/id.v:39]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 352.445 ; gain = 102.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'openmips_min_sopc_tb' [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb.v:36]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb.v:53]
+INFO: [Synth 8-638] synthesizing module 'openmips_min_sopc' [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc.v:55]
+INFO: [Synth 8-638] synthesizing module 'openmips' [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:3]
+INFO: [Synth 8-638] synthesizing module 'pc_reg' [C:/Users/honey/Desktop/selfCPU/CPU/pc_reg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pc_reg' (1#1) [C:/Users/honey/Desktop/selfCPU/CPU/pc_reg.v:3]
+INFO: [Synth 8-638] synthesizing module 'if_id' [C:/Users/honey/Desktop/selfCPU/CPU/if_id.v:4]
+INFO: [Synth 8-256] done synthesizing module 'if_id' (2#1) [C:/Users/honey/Desktop/selfCPU/CPU/if_id.v:4]
+INFO: [Synth 8-638] synthesizing module 'id' [C:/Users/honey/Desktop/selfCPU/CPU/id.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/honey/Desktop/selfCPU/CPU/id.v:340]
+INFO: [Synth 8-226] default block is never used [C:/Users/honey/Desktop/selfCPU/CPU/id.v:444]
+WARNING: [Synth 8-3848] Net is_in_delayslot_o in module/entity id does not have driver. [C:/Users/honey/Desktop/selfCPU/CPU/id.v:45]
+INFO: [Synth 8-256] done synthesizing module 'id' (3#1) [C:/Users/honey/Desktop/selfCPU/CPU/id.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'inst_o' does not match port width (32) of module 'id' [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:174]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/honey/Desktop/selfCPU/CPU/regfile.v:9]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (4#1) [C:/Users/honey/Desktop/selfCPU/CPU/regfile.v:9]
+INFO: [Synth 8-638] synthesizing module 'id_ex' [C:/Users/honey/Desktop/selfCPU/CPU/id_ex.v:5]
+INFO: [Synth 8-256] done synthesizing module 'id_ex' (5#1) [C:/Users/honey/Desktop/selfCPU/CPU/id_ex.v:5]
+WARNING: [Synth 8-689] width (1) of port connection 'id_inst' does not match port width (32) of module 'id_ex' [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:218]
+INFO: [Synth 8-638] synthesizing module 'ex' [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:54]
+WARNING: [Synth 8-3848] Net stallreq in module/entity ex does not have driver. [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:29]
+INFO: [Synth 8-256] done synthesizing module 'ex' (6#1) [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:4]
+WARNING: [Synth 8-350] instance 'ex0' of module 'ex' requires 17 connections, but only 16 given [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:234]
+INFO: [Synth 8-638] synthesizing module 'ex_mem' [C:/Users/honey/Desktop/selfCPU/CPU/ex_mem.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ex_mem' (7#1) [C:/Users/honey/Desktop/selfCPU/CPU/ex_mem.v:4]
+INFO: [Synth 8-638] synthesizing module 'mem' [C:/Users/honey/Desktop/selfCPU/CPU/mem.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/honey/Desktop/selfCPU/CPU/mem.v:91]
+INFO: [Synth 8-256] done synthesizing module 'mem' (8#1) [C:/Users/honey/Desktop/selfCPU/CPU/mem.v:36]
+WARNING: [Synth 8-689] width (4) of port connection 'mem_ce_o' does not match port width (1) of module 'mem' [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:343]
+INFO: [Synth 8-638] synthesizing module 'mem_wb' [C:/Users/honey/Desktop/selfCPU/CPU/mem_wb.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mem_wb' (9#1) [C:/Users/honey/Desktop/selfCPU/CPU/mem_wb.v:3]
+INFO: [Synth 8-638] synthesizing module 'ctrl' [C:/Users/honey/Desktop/selfCPU/CPU/ctrl.v:35]
+INFO: [Synth 8-256] done synthesizing module 'ctrl' (10#1) [C:/Users/honey/Desktop/selfCPU/CPU/ctrl.v:35]
+INFO: [Synth 8-256] done synthesizing module 'openmips' (11#1) [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:3]
+WARNING: [Synth 8-350] instance 'openmips0' of module 'openmips' requires 11 connections, but only 5 given [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc.v:67]
+INFO: [Synth 8-638] synthesizing module 'inst_rom' [C:/Users/honey/Desktop/selfCPU/CPU/inst_rom.v:35]
+INFO: [Synth 8-3876] $readmem data file 'C:\Users\honey\Desktop\selfCPU\CPU\inst_rom.data' is read successfully [C:/Users/honey/Desktop/selfCPU/CPU/inst_rom.v:46]
+INFO: [Synth 8-256] done synthesizing module 'inst_rom' (12#1) [C:/Users/honey/Desktop/selfCPU/CPU/inst_rom.v:35]
+INFO: [Synth 8-256] done synthesizing module 'openmips_min_sopc' (13#1) [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc.v:55]
+INFO: [Synth 8-256] done synthesizing module 'openmips_min_sopc_tb' (14#1) [C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb.v:36]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[31]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[30]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[29]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[28]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[27]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[26]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[25]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[24]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[23]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[22]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[21]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[20]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[19]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[1]
+WARNING: [Synth 8-3331] design inst_rom has unconnected port addr[0]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[3]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[2]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[1]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[5]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[1]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex has unconnected port stallreq
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[30]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[29]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[28]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[27]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[26]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[25]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[24]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[23]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[22]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[21]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[20]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[11]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[10]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[9]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[8]
+WARNING: [Synth 8-3331] design ex has unconnected port is_in_delayslot_i
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[5]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[4]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[0]
+WARNING: [Synth 8-3331] design id has unconnected port is_in_delayslot_o
+WARNING: [Synth 8-3331] design id has unconnected port is_in_delayslot_i
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[5]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[4]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[3]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[2]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[1]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[3]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[2]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[1]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 431.223 ; gain = 181.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 431.223 ; gain = 181.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 431.223 ; gain = 181.172
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/honey/Desktop/selfCPU/CPU/id.v:114]
+INFO: [Synth 8-5544] ROM "reg1_read_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wreg_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluop_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "aluop_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "aluop_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alusel_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "alusel_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "alusel_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "link_addr_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:54]
+INFO: [Synth 8-5546] ROM "mem_addr_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_ce_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'next_inst_in_delayslot_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/id.v:141]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_target_address_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/id.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'link_addr_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/id.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'shiftres_reg' [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_addr_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/ex.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_sel_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/mem.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_data_o_reg' [C:/Users/honey/Desktop/selfCPU/CPU/mem.v:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 434.703 ; gain = 184.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 30    
+	   3 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module id 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   8 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 5     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ex_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 2     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module inst_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "link_addr_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design ex has unconnected port stallreq
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[30]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[29]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[28]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[27]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[26]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[25]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[24]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[23]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[22]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[21]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[20]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[11]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[10]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[9]
+WARNING: [Synth 8-3331] design ex has unconnected port inst_i[8]
+WARNING: [Synth 8-3331] design ex has unconnected port is_in_delayslot_i
+WARNING: [Synth 8-3331] design id has unconnected port is_in_delayslot_o
+WARNING: [Synth 8-3331] design id has unconnected port is_in_delayslot_i
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[3]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[2]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[1]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[0]
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/ce_reg) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[31]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[30]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[29]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[28]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[27]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[26]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[25]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[24]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[23]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[22]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[21]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[20]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[19]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[18]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[17]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[16]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[15]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[14]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[13]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[12]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[11]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[10]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[9]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[8]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[7]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[6]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[5]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[4]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[3]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[2]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[1]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/pc_reg0/pc_reg[0]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/next_inst_in_delayslot_o_reg) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[31]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[30]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[29]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[28]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[27]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[26]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[25]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[24]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[23]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[22]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[21]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[20]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[19]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[18]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[17]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[16]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[15]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[14]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[13]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[12]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[11]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[10]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[9]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[8]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[7]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[6]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[5]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[4]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[3]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[2]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[1]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/branch_target_address_o_reg[0]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[31]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[30]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[29]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[28]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[27]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[26]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[25]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[24]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[23]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[22]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[21]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[20]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[19]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[18]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[17]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[16]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[15]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[14]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[13]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[12]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[11]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[10]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[9]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[8]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[7]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[6]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[5]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[4]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[3]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[2]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[1]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/id0/link_addr_o_reg[0]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/ex0/shiftres_reg[31]) is unused and will be removed from module openmips_min_sopc_tb.
+WARNING: [Synth 8-3332] Sequential element (openmips_min_sopc0/openmips0/ex0/shiftres_reg[30]) is unused and will be removed from module openmips_min_sopc_tb.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+------------+---------------+----------------+
+|Module Name          | RTL Object | Depth x Width | Implemented As | 
++---------------------+------------+---------------+----------------+
+|inst_rom             | p_0_out    | 32x32         | LUT            | 
+|openmips_min_sopc_tb | p_0_out    | 32x32         | LUT            | 
++---------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 627 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 532.563 ; gain = 282.512
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 592.297 ; gain = 354.770
+INFO: [Common 17-1381] The checkpoint 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.runs/synth_1/openmips_min_sopc_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file openmips_min_sopc_tb_utilization_synth.rpt -pb openmips_min_sopc_tb_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 592.297 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 08:16:39 2018...

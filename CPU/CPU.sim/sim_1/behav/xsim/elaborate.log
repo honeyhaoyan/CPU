@@ -1,0 +1,10 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto ab9ba7ea4dcf40659e153a97b7b84ee3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port inst_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:174]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port id_inst [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:218]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port mem_ce_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:343]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
