@@ -1,0 +1,282 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 6688
+License: Customer
+
+Current time: 	Fri Jan 05 20:53:13 CST 2018
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 0 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Vivado/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	F:/Vivado/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	honey
+User home directory: C:/Users/honey
+User working directory: C:/Users/honey/Desktop/selfCPU/CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Vivado/Vivado
+HDI_APPROOT: F:/Vivado/Vivado/2017.3
+RDI_DATADIR: F:/Vivado/Vivado/2017.3/data
+RDI_BINDIR: F:/Vivado/Vivado/2017.3/bin
+
+User preferences location: C:/Users/honey/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/honey/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/honey/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	F:/Vivado/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/honey/Desktop/selfCPU/CPU/vivado.log
+Vivado journal file location: 	C:/Users/honey/Desktop/selfCPU/CPU/vivado.jou
+Engine tmp dir: 	C:/Users/honey/Desktop/selfCPU/CPU/.Xil/Vivado-6688-LAPTOP-597S38P0
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 570 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\honey\Desktop\selfCPU\CPU\CPU.xpr. Version: Vivado v2017.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project C:/Users/honey/Desktop/selfCPU/CPU/CPU.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 57 MB (+57167kb) [00:00:08]
+// [Engine Memory]: 543 MB (+417675kb) [00:00:08]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 70 MB (+10728kb) [00:00:10]
+// [Engine Memory]: 570 MB (+53kb) [00:00:12]
+// Tcl Message: open_project C:/Users/honey/Desktop/selfCPU/CPU/CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2017.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 576 MB. GUI used memory: 37 MB. Current time: 1/5/18 8:53:13 PM CST
+// Project name: CPU; location: C:/Users/honey/Desktop/selfCPU/CPU; part: xc7k70tfbv676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 794.199 ; gain = 16.305 
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Jan  5 20:53:24 2018] Launched synth_1... Run output will be captured here: C:/Users/honey/Desktop/selfCPU/CPU/CPU.runs/synth_1/runme.log 
+// [Engine Memory]: 602 MB (+3557kb) [00:00:24]
+dismissDialog("Starting Design Runs"); // bs (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj openmips_min_sopc_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot openmips_min_sopc_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -view {C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb_behav.wcfg 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// HMemoryUtils.trashcanNow. Engine heap size: 612 MB. GUI used memory: 42 MB. Current time: 1/5/18 8:53:40 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source openmips_min_sopc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 812.805 ; gain = 0.809 
+// 'd' command handler elapsed time: 11 seconds
+// [Engine Memory]: 633 MB (+626kb) [00:00:40]
+// Elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cl)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 42 MB. Current time: 1/5/18 8:53:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/5/18 8:53:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/5/18 8:53:48 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/5/18 8:53:49 PM CST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah (cl): Synthesis Completed: addNotify
+// [GUI Memory]: 74 MB (+907kb) [00:01:24]
+// [GUI Memory]: 78 MB (+3kb) [00:01:54]
+// [GUI Memory]: 82 MB (+332kb) [00:06:24]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 87 MB (+315kb) [00:25:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 43 MB. Current time: 1/5/18 9:23:53 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 40 MB. Current time: 1/5/18 9:53:53 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 91 MB (+62kb) [01:26:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 42 MB. Current time: 1/5/18 10:23:53 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 40 MB. Current time: 1/5/18 10:53:57 PM CST
+// Elapsed time: 7665 seconds
+selectView(PAResourceOtoP.PAViews_FLOW_NAVIGATOR, "Flow Navigator", 75, 75, 243, 655, false, false, false, true, false); // D (ch, cl) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [GUI Memory]: 96 MB (+0kb) [02:13:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/5/18 11:23:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/5/18 11:53:57 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 42 MB. Current time: 1/6/18 12:23:57 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 41 MB. Current time: 1/6/18 9:05:11 AM CST
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2017.3 (64-bit)
+# SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Current time: Sat Jan 06 09:26:26 CST 2018
+# Process ID: 6688
+# OS: Windows 10
+# User: honey
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See C:/Users/honey/Desktop/selfCPU/CPU/vivado_pid6688.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2017.3 (64-bit)
+# SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Current time: Sat Jan 06 09:26:26 CST 2018
+# Process ID: 6688
+# OS: Windows 10
+# User: honey
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See C:/Users/honey/Desktop/selfCPU/CPU/vivado_pid6688.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2017.3 (64-bit)
+# SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Current time: Sat Jan 06 09:26:26 CST 2018
+# Process ID: 6688
+# OS: Windows 10
+# User: honey
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See C:/Users/honey/Desktop/selfCPU/CPU/vivado_pid6688.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2017.3 (64-bit)
+# SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Current time: Sat Jan 06 09:26:26 CST 2018
+# Process ID: 6688
+# OS: Windows 10
+# User: honey
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See C:/Users/honey/Desktop/selfCPU/CPU/vivado_pid6688.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2017.3 (64-bit)
+# SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Current time: Sat Jan 06 09:26:26 CST 2018
+# Process ID: 6688
+# OS: Windows 10
+# User: honey
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See C:/Users/honey/Desktop/selfCPU/CPU/vivado_pid6688.debug)
+*/
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Command: 'exit'
+// TclEventType: STOP_GUI
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 39 MB. Current time: 1/6/18 9:26:33 AM CST
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: PA_SHUTDOWN
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 34 MB. Current time: 1/6/18 9:26:33 AM CST
+
+// Exiting Vivado with a status code 0 at 1/6/18 9:26:33 AM CST...
+// Elapsed time: 12:33:32

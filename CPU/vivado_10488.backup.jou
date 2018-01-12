@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Jan 12 07:36:17 2018
+# Process ID: 10488
+# Current directory: C:/Users/honey/Desktop/selfCPU/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10252 C:\Users\honey\Desktop\selfCPU\CPU\CPU.xpr
+# Log file: C:/Users/honey/Desktop/selfCPU/CPU/vivado.log
+# Journal file: C:/Users/honey/Desktop/selfCPU/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/honey/Desktop/selfCPU/CPU/CPU.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+add_wave {{/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0}} 
+relaunch_sim
+close_sim

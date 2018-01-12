@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Jan 12 18:08:54 2018
+# Process ID: 404
+# Current directory: C:/Users/honey/Desktop/selfCPU/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8512 C:\Users\honey\Desktop\selfCPU\CPU\CPU.xpr
+# Log file: C:/Users/honey/Desktop/selfCPU/CPU/vivado.log
+# Journal file: C:/Users/honey/Desktop/selfCPU/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/honey/Desktop/selfCPU/CPU/CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 832.262 ; gain = 106.137
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto ab9ba7ea4dcf40659e153a97b7b84ee3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port inst_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:174]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port id_inst [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:218]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port mem_ce_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:343]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -view {C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/honey/Desktop/selfCPU/CPU/openmips_min_sopc_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 832.262 ; gain = 0.000
+add_wave {{/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0}} 
+add_wave {{/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/pc_reg0}} 
+add_wave {{/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/honey/Desktop/selfCPU/CPU/CPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto ab9ba7ea4dcf40659e153a97b7b84ee3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port inst_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:174]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port id_inst [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:218]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port mem_ce_o [C:/Users/honey/Desktop/selfCPU/CPU/openmips.v:343]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 836.199 ; gain = 0.000
